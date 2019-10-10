@@ -1,5 +1,5 @@
 {
-  "name": "@megafon/megafon-ui",
+  "name": "@jekatigr/megafon-ui",
   "private": true,
   "scripts": {
     "build-all": "lerna run build",
