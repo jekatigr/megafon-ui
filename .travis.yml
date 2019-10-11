@@ -11,13 +11,13 @@ cache:
     - ui-core/node_modules
 
 env:
-  - DOCS_DEPLOY_BRANCH=master
+  - DOCS_DEPLOY_BRANCH=publish-test
 
 before_install:
   - npm install -g lerna
 
 install:
-  - lerna bootstrap
+  - lerna bootstrap --no-ci
 
 before_script:
   - npm install -g codecov

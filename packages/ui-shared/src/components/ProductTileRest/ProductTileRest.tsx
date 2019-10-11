@@ -2,10 +2,10 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { cnCreate } from '../../utils/cn';
 import './ProductTileRest.less';
-import Header from '@megafon/ui-core/src/components/Header/Header';
-import TextLink from '@megafon/ui-core/src/components/TextLink/TextLink';
-import Button, { IButtonProps } from '@megafon/ui-core/src/components/Button/Button';
-import DropdownSocialList from '@megafon/ui-core/src/components/DropdownSocialList/DropdownSocialList';
+import Header from '@jekatigr/ui-core/src/components/Header/Header';
+import TextLink from '@jekatigr/ui-core/src/components/TextLink/TextLink';
+import Button, { IButtonProps } from '@jekatigr/ui-core/src/components/Button/Button';
+import DropdownSocialList from '@jekatigr/ui-core/src/components/DropdownSocialList/DropdownSocialList';
 
 const LinkTargetType = PropTypes.oneOf(['_self', '_blank', '_parent', '_top']);
 export type TLinkTargetType = '_self' | '_blank' | '_parent' | '_top';

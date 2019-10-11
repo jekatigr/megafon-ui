@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { cnCreate } from '../../utils/cn';
 import './style/ProductTile.less';
-import TextLink from '@megafon/ui-core/src/components/TextLink/TextLink';
+import TextLink from '@jekatigr/ui-core/src/components/TextLink/TextLink';
 import Hint from './ProductTileHint';
 import Cashback from './ProductTileCashback';
 import Static from './ProductTileStatic';
