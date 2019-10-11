@@ -1,6 +1,6 @@
 {
   "name": "@jekatigr/ui-shared",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "files": [
     "dist"
   ],
@@ -23,7 +23,7 @@
     "lint": "npm run lint:ts && npm run lint:less",
     "lint:less": "stylelint --syntax less src/**/*.less src/**/**/*.less",
     "lint:ts": "tslint -c tslint.json '{src,scripts}/**/*.ts?(x)'",
-    "prepublishOnly": "npm ci && npm run build",
+    "prepublishOnly": "lerna clean --yes --scope=@jekatigr/ui-shared && lerna bootstrap && npm run build",
     "test": "npm run test:unit",
     "test:unit": "jest",
     "testu": "jest --updateSnapshot"
@@ -139,7 +139,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/runtime": "^7.0.0",
-    "@jekatigr/ui-core": "2.0.0",
+    "@jekatigr/ui-core": "2.0.1",
     "classnames": "^2.2.6",
     "deep-equal": "^1.0.1",
     "lodash.throttle": "^4.1.1",
