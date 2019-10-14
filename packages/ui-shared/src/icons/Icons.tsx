@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './Icons.less';
-import Header from '@megafon/ui-core/src/components/Header/Header';
+import Header from '@jekatigr/ui-core/src/components/Header/Header';
 import Cancel from 'icons/System/32/Cancel_32.svg';
 import Copy from 'icons/Basic/24/Whats-left_24.svg';
 import { cnCreate } from '../utils/cn';
@@ -34,7 +34,7 @@ const sizeDictionary = {
     32: 'L',
 };
 
-const importIcon = 'import Icon from \'@megafon/megafon-ui/icons/';
+const importIcon = 'import Icon from \'@jekatigr/megafon-ui/icons/';
 
 class Icons extends React.Component<{}, IIconsState> {
     copyToClipBoard: (str: string, copyIndex: copyBoard) => void;

@@ -11,7 +11,7 @@ cache:
     - ui-core/node_modules
 
 env:
-  - DOCS_DEPLOY_BRANCH=master
+  - DOCS_DEPLOY_BRANCH=deploy-test
 
 before_install:
   - npm install -g lerna

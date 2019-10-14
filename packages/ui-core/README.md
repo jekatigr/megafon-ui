@@ -1,9 +1,9 @@
-# @megafon/ui-core
+# @jekatigr/ui-core
 
 ## Getting started
 
 ```bash
-$ npm install --save @megafon/ui-core
+$ npm install --save @jekatigr/ui-core
 ```
 
 ## Development notes
