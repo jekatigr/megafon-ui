@@ -8,7 +8,8 @@
     "publish-all": "lerna publish from-package --yes",
     "lint": "lerna run lint",
     "test": "lerna run test",
-    "pre-commit": "lerna run lint && lerna run test"
+    "pre-commit": "lerna run lint && lerna run test",
+    "bump-version": "lerna version && yarn install"
   },
   "husky": {
     "hooks": {
