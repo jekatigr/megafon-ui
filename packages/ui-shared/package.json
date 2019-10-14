@@ -138,7 +138,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/runtime": "^7.0.0",
-    "@jekatigr/ui-core": "^3.0.0",
+    "@jekatigr/ui-core": "^3.0.1",
     "classnames": "^2.2.6",
     "deep-equal": "^1.0.1",
     "lodash.throttle": "^4.1.1",
