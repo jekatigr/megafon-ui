@@ -23,11 +23,11 @@ npm install -g lerna
 ## Install all packages
 
 ```bash
-npm run bootstrap-all
+yarn
 ```
 
 ## Build all packages
 
 ```bash
-npm run build-all
+yarn run build
 ```
