@@ -31,3 +31,15 @@ yarn
 ```bash
 yarn run build
 ```
+
+## Update package versions
+
+```bash
+yarn run bump-version
+```
+
+Will make next steps:
+ - ask for a new version of each changed package
+ - update all cross-dependencies
+ 
+ If you don't want to update some package, you can choose "custom version" and type current version.
