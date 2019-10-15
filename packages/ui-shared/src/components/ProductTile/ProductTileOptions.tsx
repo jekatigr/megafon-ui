@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { cnCreate } from '../../utils/cn';
 import './style/ProductTileOptions.less';
-import { BubbleHint } from '@megafon/ui-core';
+import { BubbleHint } from '@jekatigr/ui-core';
 import { IOption } from './ProductTile';
 
 interface IProductTileOptionsProps {

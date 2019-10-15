@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import './ProductCardFeaturesBottom.less';
-import { Header, Paragraph } from '@megafon/ui-core';
+import { Header, Paragraph } from '@jekatigr/ui-core';
 import { cnCreate } from '../../utils/cn';
 import { ISecondParamChildren } from './ProductCardFeatures';
 

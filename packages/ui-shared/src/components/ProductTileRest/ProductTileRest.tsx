@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import { cnCreate } from '../../utils/cn';
 import './ProductTileRest.less';
-import { Header, TextLink, Button, DropdownSocialList } from '@megafon/ui-core';
+import { Header, TextLink, Button, DropdownSocialList } from '@jekatigr/ui-core';
 import IButtonProps from '../../utils/IButtonProps';
 
 const LinkTargetType = PropTypes.oneOf(['_self', '_blank', '_parent', '_top']);

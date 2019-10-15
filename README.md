@@ -6,10 +6,10 @@
 
 Includes:
  - ui-core 
- [![npm (scoped)](https://img.shields.io/npm/v/@megafon/ui-core.svg)](https://www.npmjs.com/package/@megafon/ui-core)
+ [![npm (scoped)](https://img.shields.io/npm/v/@jekatigr/ui-core.svg)](https://www.npmjs.com/package/@jekatigr/ui-core)
 
  - ui-shared 
-[![npm (scoped)](https://img.shields.io/npm/v/@megafon/ui-shared.svg)](https://www.npmjs.com/package/@megafon/ui-shared)
+[![npm (scoped)](https://img.shields.io/npm/v/@jekatigr/ui-shared.svg)](https://www.npmjs.com/package/@jekatigr/ui-shared)
 
 ---
 
