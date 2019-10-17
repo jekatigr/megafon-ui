@@ -1,14 +1,14 @@
-# @megafon/ui-core
+# @jekatigr/ui-core
 
 React UI components library.
 
 ## Getting started
 
 ```bash
-$ npm install --save @megafon/ui-core
+$ npm install --save @jekatigr/ui-core
 ```
 ```bash
-$ yarn add @megafon/ui-core
+$ yarn add @jekatigr/ui-core
 ```
 
 ## Development notes
