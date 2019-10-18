@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cn as cnCreate } from '@megafon/ui-core';
+import { cn as cnCreate } from '@jekatigr/ui-core';
 import './ProductCardTotal.less';
-import { Button } from '@megafon/ui-core';
+import { Button } from '@jekatigr/ui-core';
 
 const LinkTargetType = PropTypes.oneOf(['_self', '_blank', '_parent', '_top']);
 export type TLinkTargetType = '_self' | '_blank' | '_parent' | '_top';

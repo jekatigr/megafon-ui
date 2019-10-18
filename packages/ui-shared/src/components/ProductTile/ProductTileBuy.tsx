@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cn as cnCreate } from '@megafon/ui-core';
+import { cn as cnCreate } from '@jekatigr/ui-core';
 import './style/ProductTileBuy.less';
-import { Button, TextLink } from '@megafon/ui-core';
+import { Button, TextLink } from '@jekatigr/ui-core';
 import { TLinkTargetType } from './ProductTile';
 
 type IButtonProps = Button['props'];

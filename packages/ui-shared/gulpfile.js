@@ -97,7 +97,7 @@ gulp.task('svg', () => {
 
 gulp.task('less', () => {
     return gulp.src('src/**/*.less')
-        .pipe(replaceContent(/\~@megafon/g, '@megafon'))
+        .pipe(replaceContent(/\~@jekatigr/g, '@jekatigr'))
         .pipe(replaceContent(/icons\/\w+\/\d+\/.*\.svg/g, function (match) {
             const newPath = match.toLowerCase()
                 .replace(/icons\//g, '')

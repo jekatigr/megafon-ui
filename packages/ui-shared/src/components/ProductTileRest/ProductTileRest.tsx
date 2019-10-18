@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cn as cnCreate } from '@megafon/ui-core';
+import { cn as cnCreate } from '@jekatigr/ui-core';
 import './ProductTileRest.less';
-import { Header, TextLink, Button, DropdownSocialList } from '@megafon/ui-core';
+import { Header, TextLink, Button, DropdownSocialList } from '@jekatigr/ui-core';
 
 type IButtonProps = Button['props'];
 
