@@ -1,6 +1,6 @@
 {
   "name": "@jekatigr/ui-core",
-  "version": "1.0.0",
+  "version": "3.2.14",
   "files": [
     "dist",
     "styles"
