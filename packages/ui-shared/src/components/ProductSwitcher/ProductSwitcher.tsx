@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cn as cnCreate } from '@megafon/ui-core';
-import { detectTouch } from '@megafon/ui-core';
+import { cn as cnCreate } from '@jekatigr/ui-core';
+import { detectTouch } from '@jekatigr/ui-core';
 import './ProductSwitcher.less';
 
 interface IItem {
