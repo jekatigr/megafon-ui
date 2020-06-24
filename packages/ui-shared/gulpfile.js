@@ -109,7 +109,7 @@ gulp.task('svg', () => {
 gulp.task('less', () => {
     return gulp
         .src('src/**/*.less')
-        .pipe(replaceContent(/\~@megafon/g, '@megafon'))
+        .pipe(replaceContent(/\~@jekatigr/g, '@jekatigr'))
         .pipe(
             replaceContent(/icons\/\w+\/\d+\/.*\.svg/g, function(match) {
                 const newPath = match
@@ -142,7 +142,7 @@ gulp.task('ts', () => {
                     .replace(/\//g, '-')
                     .replace('.svg', '');
 
-                return `@megafon/ui-core/dist/icons/${newPath}`;
+                return `@jekatigr/ui-core/dist/icons/${newPath}`;
             })
         )
         .pipe(ts(tsConfig));

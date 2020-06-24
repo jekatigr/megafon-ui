@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cnCreate, Header, TextLink, Button, DropdownSocialList } from '@megafon/ui-core';
+import { cnCreate, Header, TextLink, Button, DropdownSocialList } from '@jekatigr/ui-core';
 import './ProductTileRest.less';
 
 export type TLinkTargetType = '_self' | '_blank' | '_parent' | '_top';

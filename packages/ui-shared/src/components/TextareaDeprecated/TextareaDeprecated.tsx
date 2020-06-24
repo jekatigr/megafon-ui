@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import './TextareaDeprecated.less';
 import equal from 'deep-equal';
-import { InputLabel, cnCreate, detectTouch } from '@megafon/ui-core';
+import { InputLabel, cnCreate, detectTouch } from '@jekatigr/ui-core';
 
 interface ITextareaProps {
     /** Field title */

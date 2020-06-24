@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cnCreate, Button } from '@megafon/ui-core';
+import { cnCreate, Button } from '@jekatigr/ui-core';
 import './ProductCardTotal.less';
 
 const LinkTargetType = PropTypes.oneOf(['_self', '_blank', '_parent', '_top']);

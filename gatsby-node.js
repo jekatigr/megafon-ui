@@ -58,7 +58,7 @@ exports.onCreateWebpackConfig = args => {
                 resolve(__dirname, "../node_modules"),
             ],
             alias: {
-                "@megafon/ui-core": resolve(__dirname, "../packages/ui-core/src"),
+                "@jekatigr/ui-core": resolve(__dirname, "../packages/ui-core/src"),
             }
         },
         module: {
