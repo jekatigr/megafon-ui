@@ -22,11 +22,11 @@ before_script:
   - npm install -g codecov
 
 script:
-  - lerna run lint
+#  - lerna run lint
   - lerna run build
-  - lerna run typecheck
-  - lerna run coverage
-  - lerna run test
+#  - lerna run typecheck
+#  - lerna run coverage
+#  - lerna run test
 
 before_deploy:
   - if [[ $TRAVIS_BRANCH = $DOCS_DEPLOY_BRANCH ]]; then
@@ -44,18 +44,18 @@ deploy:
     skip_cleanup: true
     edge: true
     on:
-      tags: true
+      branch: conventional-test
       node_js: "10"
 
-  - provider: pages
-    github-token: "$GITHUB_TOKEN"
-    skip-cleanup: true
-    local-dir: "docs"
-    keep-history: true
-    edge: true
-    on:
-      branch: $DOCS_DEPLOY_BRANCH
-      node_js: "10"
+#  - provider: pages
+#    github-token: "$GITHUB_TOKEN"
+#    skip-cleanup: true
+#    local-dir: "docs"
+#    keep-history: true
+#    edge: true
+#    on:
+#      branch: $DOCS_DEPLOY_BRANCH
+#      node_js: "10"
 
-after_script:
-  - codecov
+#after_script:
+#  - codecov
