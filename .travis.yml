@@ -38,14 +38,21 @@ before_deploy:
     fi
 
 deploy:
-  - provider: npm
-    email: "$NPM_EMAIL"
-    api_key: "$NPM_TOKEN"
-    skip_cleanup: true
-    edge: true
-    on:
-      branch: conventional-test
-      node_js: "10"
+  - provider: script
+      script: npx lerna publish --yes
+      skip_cleanup: true
+      on:
+        branch: conventional-test
+        node_js: "10"
+
+#  - provider: npm
+#    email: "$NPM_EMAIL"
+#    api_key: "$NPM_TOKEN"
+#    skip_cleanup: true
+#    edge: true
+#    on:
+#      branch: conventional-test
+#      node_js: "10"
 
 #  - provider: pages
 #    github-token: "$GITHUB_TOKEN"
