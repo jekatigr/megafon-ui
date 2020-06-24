@@ -39,11 +39,11 @@ before_deploy:
 
 deploy:
   - provider: script
-      script: npx lerna publish --yes
-      skip_cleanup: true
-      on:
-        branch: conventional-test
-        node_js: "10"
+    script: npx lerna publish --yes
+    skip_cleanup: true
+    on:
+      branch: conventional-test
+      node_js: "10"
 
 #  - provider: npm
 #    email: "$NPM_EMAIL"
