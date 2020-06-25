@@ -4,7 +4,7 @@ import './Grid.less';
 import cnCreate from 'utils/cnCreate';
 import { IGridColumn } from './GridColumn';
 
-// new comment 2
+// new comment 3
 
 interface IGridProps {
     /** Alignment of all columns by horizontal axis */
