@@ -1,6 +1,6 @@
 {
   "name": "@jekatigr/ui-shared",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "files": [
     "dist"
   ],
@@ -133,7 +133,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/runtime": "^7.8.4",
-    "@jekatigr/ui-core": "^1.4.3",
+    "@jekatigr/ui-core": "^1.4.4",
     "classnames": "^2.2.6",
     "core-js": "^3.6.4",
     "deep-equal": "^1.1.1",
