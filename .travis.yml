@@ -35,7 +35,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: git checkout conventional-test && yarn lerna publish --yes
+    script: git checkout conventional-test && npx lerna publish --conventional-commits
     skip_cleanup: true
     on:
       branch: conventional-test
