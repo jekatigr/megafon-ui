@@ -2,11 +2,18 @@
   "version": "independent",
   "npmClient": "yarn",
   "command": {
-    "ignoreChanges": [
-      "*.md",
-      "*.mdx",
-      "*.txt",
-      "*.test.*"
-    ]
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): release",
+      "ignoreChanges": [
+        "*.md",
+        "*.mdx",
+        "*.txt",
+        "*.test.*"
+      ]
+    },
+    "version": {
+      "push": false
+    }
   }
 }
