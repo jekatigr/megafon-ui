@@ -25,6 +25,7 @@ script:
 #  - lerna run test
 
 before_deploy:
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
   - if [[ $TRAVIS_BRANCH = $DOCS_DEPLOY_BRANCH ]]; then
       yarn run demo:build;
     fi
