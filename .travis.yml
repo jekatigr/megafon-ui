@@ -34,7 +34,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: npx lerna publish --conventional-commits --git-remote publish-origin --pre-dist-tag beta --yes
+    script: npx lerna publish --git-remote publish-origin --yes
     skip_cleanup: true
     on:
       branch: conventional-test

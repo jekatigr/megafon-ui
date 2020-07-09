@@ -2,6 +2,9 @@
   "version": "independent",
   "npmClient": "yarn",
   "command": {
+    "version": {
+      "createRelease": "github"
+    },
     "publish": {
       "allowBranch": "conventional-test",
       "conventionalCommits": true,
