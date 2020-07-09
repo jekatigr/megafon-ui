@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.6](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.5...@jekatigr/ui-core@1.4.6) (2020-07-09)
+
+
+### Bug Fixes
+
+* tets 9 ([950ad8b](https://github.com/MegafonWebLab/megafon-ui/commit/950ad8b7ec52557608deeeb04567ba1ca3d000b4))
+
+
+
+
+
 ## [1.4.5](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.4...@jekatigr/ui-core@1.4.5) (2020-06-25)
 
 
