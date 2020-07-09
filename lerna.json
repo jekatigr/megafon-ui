@@ -9,7 +9,8 @@
         "*.md",
         "*.mdx",
         "*.txt",
-        "*.test.*"
+        "*.test.*",
+        "*.docz.*"
       ]
     },
     "version": {
