@@ -3,6 +3,7 @@
   "npmClient": "yarn",
   "command": {
     "publish": {
+      "allowBranch": "conventional-test",
       "conventionalCommits": true,
       "message": "chore(release): release",
       "ignoreChanges": [
