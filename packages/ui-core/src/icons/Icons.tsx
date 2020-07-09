@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './Icons.less';
-import Header from '../components/Header/Header';
 import Cancel from 'icons/System/32/Cancel_32.svg';
 import Copy from 'icons/Basic/24/Whats-left_24.svg';
 import cnCreate from 'utils/cnCreate';
@@ -189,7 +188,7 @@ class Icons extends React.Component<{}, IIconsState> {
                 <div className={cn('')}>
                     {Object.keys(sections).map((section: string) =>
                         <div key={section}>
-                            <Header as="h2">{section}</Header>
+                            <h2>{section}</h2>
                             <div className={cn('icons')}>
                                 {this.renderIcons(Object.entries(sections[section]))}
                             </div>
