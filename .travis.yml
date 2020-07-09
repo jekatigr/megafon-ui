@@ -26,6 +26,8 @@ script:
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+  - git remote add publish-origin --fetch https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+  - git checkout conventional-test
   - if [[ $TRAVIS_BRANCH = $DOCS_DEPLOY_BRANCH ]]; then
       yarn run demo:build;
     fi
@@ -36,7 +38,7 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: git checkout conventional-test && npx lerna publish --conventional-commits --yes
+    script: npx lerna publish --conventional-commits --git-remote publish-origin --yes
     skip_cleanup: true
     on:
       branch: conventional-test
