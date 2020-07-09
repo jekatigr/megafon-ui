@@ -12,9 +12,6 @@
         "*.test.*",
         "*.docz.*"
       ]
-    },
-    "version": {
-      "push": false
     }
   }
 }
