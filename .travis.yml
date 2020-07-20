@@ -32,13 +32,13 @@ before_deploy:
       yarn run demo:build;
     fi
 
-deploy:
-  - provider: script
-    script: npx lerna publish --git-remote publish-origin --yes
-    skip_cleanup: true
-    on:
-      branch: conventional-test
-      node_js: "12"
+#deploy:
+#  - provider: script
+#    script: npx lerna publish --git-remote publish-origin --yes
+#    skip_cleanup: true
+#    on:
+#      branch: conventional-test
+#      node_js: "12"
 
 #  - provider: npm
 #    email: "$NPM_EMAIL"
