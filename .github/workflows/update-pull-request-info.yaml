@@ -1,4 +1,4 @@
-name: update-pull-request-info
+name: Update pull requests description
 
 on:
   schedule:
