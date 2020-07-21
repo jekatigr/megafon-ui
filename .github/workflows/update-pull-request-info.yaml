@@ -1,0 +1,14 @@
+name: update-pull-request-info
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+jobs:
+  update:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greet
+        run: echo 'Hello world?!'
