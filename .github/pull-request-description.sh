@@ -65,7 +65,7 @@ function extract_versions() {
 function update_pull_request_description() {
     local pull_request_number=$1
 
-    git fetch upstream pull/"${pull_request_number}"/head
+    git fetch origin pull/"${pull_request_number}"/head
     git checkout FETCH_HEAD
 
     # generate changelogs and update version
