@@ -109,6 +109,8 @@ for k in $(jq '. | keys | .[]' <<< "$PULL_REQUESTS"); do
         pr_number=$(jq -r ".number" <<< "$pull_request");
         echo "Pull request #${pr_number} description should be updated";
         update_pull_request_description "$pr_number";
+
+        exit;
     fi
 done
 
