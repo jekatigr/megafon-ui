@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ -z "$GITHUB_USERNAME" ]] || [[ -z "$GITHUB_AUTH_TOKEN" ]] || [[ -z "$REPO_NAME" ]] || [[ -z "$BASE_BRANCH" ]]
+then
+    echo "Not enough info to make checks.";
+    exit 1;
+fi
+
 function compose_new_body() {
     local pull_request_body=$1;
     local versions=$2;
