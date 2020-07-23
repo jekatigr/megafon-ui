@@ -17,10 +17,13 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn run pre-commit"
+            "pre-commit": "yarn run pre-commit",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
         "commitizen": "^4.1.2",
         "cz-conventional-changelog": "^3.2.0",
         "docz": "2.2.0",
@@ -32,5 +35,10 @@
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
     }
 }
