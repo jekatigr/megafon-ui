@@ -1,6 +1,6 @@
 name: megafon-ui CI
 
-on: [push]
+on: [pull_request, push]
 
 jobs:
   main:
@@ -13,6 +13,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -42,7 +47,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Linting
-        run: yarn exec commitlint --from=${{ github.head_ref }} --to=HEAD
+        run: yarn exec commitlint --from=${{ github.base_ref }} --to=HEAD
 
       - name: Build
         run: yarn build
