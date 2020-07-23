@@ -32,4 +32,8 @@ jobs:
         run: npm install -g lerna
 
       - name: Run update script
+        env:
+          GITHUB_REPOSITORY: ${{ env.GITHUB_REPOSITORY }}
+          GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_BRANCH: 'conventional-test'
         run: ./.github/pull-requests-description.sh
