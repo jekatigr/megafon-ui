@@ -1,10 +1,5 @@
 #!/bin/bash
 
-GITHUB_USERNAME="$1"
-GITHUB_AUTH_TOKEN="$2"
-REPO_NAME="$3"
-BASE_BRANCH="$4"
-
 function compose_new_body() {
     local pull_request_body=$1;
     local versions=$2;
