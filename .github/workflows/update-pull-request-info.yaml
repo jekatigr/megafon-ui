@@ -29,7 +29,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Lerna
-        run: npm install -g lerna
+        run: yarn global add lerna
 
       - name: Run update script
         env:
