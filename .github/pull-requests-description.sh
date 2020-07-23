@@ -8,6 +8,7 @@ then
     exit 1;
 fi
 
+echo "Extracting user and repository name..."
 GITHUB_USERNAME=$(sed 's/.*\///' <<< "$GITHUB_REPOSITORY")
 REPO_NAME=$(sed 's/\/.*//' <<< "$GITHUB_REPOSITORY")
 
