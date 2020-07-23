@@ -8,8 +8,8 @@ then
     exit 1;
 fi
 
-GITHUB_USERNAME=$(sed 's/.*\///' <<< "$GITHUB_REPOSITORY");
-REPO_NAME=$(sed 's/\/.*//' <<< "$GITHUB_REPOSITORY");
+GITHUB_USERNAME=$(sed 's/\/.*//' <<< "$GITHUB_REPOSITORY");
+REPO_NAME=$(sed 's/.*\///' <<< "$GITHUB_REPOSITORY");
 echo "Extracted user and repository name from env variable.";
 
 function compose_new_body() {
@@ -105,7 +105,7 @@ function update_pull_request_description() {
     git reset --hard
 }
 
-fetch_url="https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/pulls?state=open\&base=${BASE_BRANCH}"
+fetch_url="https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/pulls?state=open&base=${BASE_BRANCH}"
 echo "Fetching open pull requests for base branch with url: ${fetch_url}";
 # get pull requests info
 PULL_REQUESTS=$(curl -s \
