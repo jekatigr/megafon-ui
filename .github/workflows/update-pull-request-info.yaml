@@ -1,8 +1,8 @@
 name: Update pull requests description
 
-on: [push]
-#  schedule:
-#    - cron:  '*/5 * * * *'
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
 
 jobs:
   update:
