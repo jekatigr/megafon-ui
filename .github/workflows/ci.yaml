@@ -14,9 +14,15 @@ jobs:
         with:
           node-version: '12.x'
 
+      - name: Extract branch name
+        id: extract_branch
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Yarn cache
         uses: actions/cache@v2
         id: cache-yarn-ci
@@ -25,6 +31,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
       - name: Local Node.js modules cache
         id: cache-node-modules-ci
         uses: actions/cache@v2
@@ -35,7 +42,12 @@ jobs:
           key: ${{ runner.os }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-nodemodules-
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Linting
+        run: commitlint --from=${{ steps.extract_branch.outputs.branch }} --to=HEAD
+
       - name: Build
         run: yarn build
