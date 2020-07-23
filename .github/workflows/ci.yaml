@@ -50,7 +50,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Linting
-        run: yarn exec commitlint -- --from=${{ github.base_ref }} --to=HEAD
+        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
 
       - name: Build
         run: yarn build
