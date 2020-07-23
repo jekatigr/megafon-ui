@@ -9,6 +9,8 @@ fi
 GITHUB_USERNAME=$(sed 's/.*\///' <<< "$GITHUB_REPOSITORY")
 REPO_NAME=$(sed 's/\/.*//' <<< "$GITHUB_REPOSITORY")
 
+printf "provided envs:\n\tGITHUB_REPOSITORY: '%s',\n\tBASE_BRANCH: '%s'\n" "$GITHUB_REPOSITORY" "$BASE_BRANCH"
+
 function compose_new_body() {
     local pull_request_body=$1;
     local versions=$2;
