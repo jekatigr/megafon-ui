@@ -113,8 +113,6 @@ PULL_REQUESTS=$(curl -s \
   "${fetch_url}")
 echo "Fetched.";
 
-echo "${PULL_REQUESTS}";
-
 for k in $(jq '. | keys | .[]' <<< "$PULL_REQUESTS"); do
     pull_request=$(jq -r ".[$k]" <<< "$PULL_REQUESTS");
     pr_number=$(jq -r ".number" <<< "$pull_request");
