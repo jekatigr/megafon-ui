@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+          fetch-depth: 0
 
       - name: Dump GitHub context
         env:
