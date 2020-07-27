@@ -82,7 +82,7 @@ function update_pull_request_description() {
     git checkout pr-"${pull_request_number}"
 
     # generate changelogs and update version
-    yarn exec lerna version --allow-branch=* --conventional-commits --no-git-tag-version --no-push --yes
+    yarn exec lerna version --allow-branch=* --conventional-commits --no-git-tag-version --no-push --no-git-reset --yes
 
     local versions;
     local changelogs;
