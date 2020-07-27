@@ -69,13 +69,17 @@ jobs:
 #      - name: Tests
 #        run: yarn test
 
-      - name: Build documentation
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
-        run: yarn demo:build
+#      - name: Build documentation
+#        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+#        run: yarn demo:build
+#
+#      - name: Deploy documentation
+#        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: ./docs
 
-      - name: Deploy documentation
+      - name: Publish
         if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+        run: yarn exec lerna publish -- --yes
