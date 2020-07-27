@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './Icons.less';
-import Cancel from 'icons/System/32/Cancel_32.svg';
+import Cancel from 'icons/Basic/32/Cancel_32.svg';
 import Copy from 'icons/Basic/24/Whats-left_24.svg';
 import cnCreate from 'utils/cnCreate';
 
