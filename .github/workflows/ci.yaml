@@ -80,6 +80,14 @@ jobs:
 #          github_token: ${{ secrets.GITHUB_TOKEN }}
 #          publish_dir: ./docs
 
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name 'Megafon CI git user'
+          git config --global user.email 'megafon-ci@users.noreply.github.com'
+          git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/bennypowers/apollo-elements
+#        env:
+#          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+
       - name: Publish
         if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: yarn exec lerna publish -- --yes
