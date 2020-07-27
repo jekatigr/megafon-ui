@@ -1,6 +1,10 @@
 name: megafon-ui CI
 
-on: [pull_request, push]
+on:
+  pull_request:
+  push:
+    branches:
+      - conventional-test
 
 jobs:
   main:
@@ -44,7 +48,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Linting
+      - name: Linting commit messages
+        if: ${{ github.event_name == 'pull_request' }}
         run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
 
       - name: Build
