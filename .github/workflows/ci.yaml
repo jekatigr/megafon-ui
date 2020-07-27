@@ -91,3 +91,5 @@ jobs:
       - name: Publish
         if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: yarn exec lerna publish -- --yes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
