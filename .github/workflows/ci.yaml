@@ -50,26 +50,32 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Linting commit messages
-        if: ${{ github.event_name == 'pull_request' }}
-        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+#      - name: Linting commit messages
+#        if: ${{ github.event_name == 'pull_request' }}
+#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
 
-      - name: Linting sources
-        run: yarn lint
+#      - name: Linting sources
+#        run: yarn lint
 
       - name: Build
         run: yarn build
 
-      - name: Typecheck
-        run: yarn typecheck
+#      - name: Typecheck
+#        run: yarn typecheck
+#
+#      - name: Code coverage
+#        run: yarn coverage
+#
+#      - name: Tests
+#        run: yarn test
 
-      - name: Code coverage
-        run: yarn coverage
-
-      - name: Tests
-        run: yarn test
+      - name: Build documentation
+        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        run: yarn demo:build
 
       - name: Deploy documentation
         if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
-        run: echo "here"
-
+        uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./docs
