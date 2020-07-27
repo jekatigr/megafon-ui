@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.10](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.9...@jekatigr/ui-core@1.4.10) (2020-07-27)
+
+**Note:** Version bump only for package @jekatigr/ui-core
+
+
+
+
+
 ## [1.4.9](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.8...@jekatigr/ui-core@1.4.9) (2020-07-19)
 
 
