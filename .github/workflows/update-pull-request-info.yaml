@@ -36,6 +36,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ env.GITHUB_REPOSITORY }}
           GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_BRANCH: 'conventional-test'
-        run: |
-          chmod +x ./.github/pull-requests-description.sh
-          ./.github/pull-requests-description.sh
+        run: ./.github/pull-requests-description.sh
