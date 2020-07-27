@@ -78,11 +78,11 @@ function update_pull_request_description() {
     local pull_request_body=$2
     local pull_request_last_sha=$3
 
-    git fetch origin pull/"${pull_request_number}"/head:pr-"${pull_request_number}"
-    git checkout pr-"${pull_request_number}"
+    git fetch origin pull/"${pull_request_number}"/head:pr/"${pull_request_number}"
+    git checkout pr/"${pull_request_number}"
 
     # generate changelogs and update version
-    yarn exec lerna version --allow-branch=* --conventional-commits --no-git-tag-version --no-push --no-git-reset --yes
+    yarn exec lerna version -- --allow-branch=pr/"${pull_request_number}" --conventional-commits --no-git-tag-version --no-push --yes
 
     local versions;
     local changelogs;
@@ -112,6 +112,9 @@ PULL_REQUESTS=$(curl -s \
   -H "Accept: application/vnd.github.v3+json" \
   "${fetch_url}")
 echo "Fetched.";
+
+# make github pull requests branches available for tracking locally
+git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
 
 for k in $(jq '. | keys | .[]' <<< "$PULL_REQUESTS"); do
     pull_request=$(jq -r ".[$k]" <<< "$PULL_REQUESTS");
