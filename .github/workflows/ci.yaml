@@ -8,6 +8,8 @@ on:
 
 jobs:
   main:
+    env:
+      BASE_BRANCH: conventional-test
 
     runs-on: ubuntu-latest
 
@@ -66,4 +68,8 @@ jobs:
 
       - name: Tests
         run: yarn test
+
+      - Deploy documentation
+        if: ${{ github.ref == 'refs/heads/${{BASE_BRANCH}}' }}
+        run: echo "here"
 
