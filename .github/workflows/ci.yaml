@@ -88,6 +88,14 @@ jobs:
 #        env:
 #          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
+      - name: Authenticate with NPM Registry
+        run: |
+          echo "registry=http://registry.npmjs.org/" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          yarn whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish
         if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: yarn exec lerna publish -- --yes
