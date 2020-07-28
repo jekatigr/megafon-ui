@@ -75,7 +75,7 @@ jobs:
           echo 'refs/heads/${{ env.BASE_BRANCH }}'
 
       - name: Build documentation
-        if: github.ref == 'refs/heads/conventional-test'
+        if: github.ref == 'refs/heads/$BASE_BRANCH'
         run: yarn demo:build
 
       - name: Deploy documentation
