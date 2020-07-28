@@ -79,7 +79,6 @@ jobs:
             echo ::set-output name=is_base::false
           fi
 
-
       - name: Echo
         run: |
           echo ${{ steps.branch.outputs.is_base }}
@@ -91,21 +90,21 @@ jobs:
         run: yarn demo:build
 
       - name: Deploy documentation
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: steps.branch.outputs.is_base == 'true'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
 
       - name: Configure CI Git User
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: steps.branch.outputs.is_base == 'true'
         run: |
           git config --global user.name 'Megafon CI'
           git config --global user.email 'megafon-ci@users.noreply.github.com'
           git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
 
       - name: Authenticate with NPM Registry
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: steps.branch.outputs.is_base == 'true'
         run: |
           echo "registry=http://registry.npmjs.org/" >> .npmrc
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
@@ -114,7 +113,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: steps.branch.outputs.is_base == 'true'
         run: yarn exec lerna publish -- --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
