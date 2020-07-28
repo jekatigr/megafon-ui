@@ -71,8 +71,8 @@ jobs:
 
       - name: Echo
         run: |
-          echo github.ref
-          echo 'refs/heads/$BASE_BRANCH'
+          echo ${{ github.ref }}
+          echo 'refs/heads/${{ BASE_BRANCH }}'
 
       - name: Build documentation
         if: github.ref == 'refs/heads/$BASE_BRANCH'
