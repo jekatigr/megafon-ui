@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@2.0.6...@jekatigr/ui-shared@2.0.7) (2020-07-28)
+
+
+### Bug Fixes
+
+* test 31 ([bb538af](https://github.com/MegafonWebLab/megafon-ui/commit/bb538af3eb38add7b75021056aa4aabc66377af7))
+
+
+
+
+
 ## [2.0.6](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@2.0.5...@jekatigr/ui-shared@2.0.6) (2020-07-27)
 
 
