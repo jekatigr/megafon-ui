@@ -72,7 +72,7 @@ jobs:
       - name: Build documentation
         if: $GITHUB_REF == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: |
-          echo ${{ GITHUB_REF }}
+          echo $GITHUB_REF
           echo ${{ env.BASE_BRANCH }}
           yarn demo:build
 
