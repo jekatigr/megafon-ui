@@ -70,7 +70,7 @@ jobs:
         run: yarn test
 
       - name: Build documentation
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: ${{ env.GITHUB_REF }} == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: yarn demo:build
 
       - name: Deploy documentation
@@ -81,12 +81,14 @@ jobs:
           publish_dir: ./docs
 
       - name: Configure CI Git User
+        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: |
           git config --global user.name 'Megafon CI'
           git config --global user.email 'megafon-ci@users.noreply.github.com'
           git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
 
       - name: Authenticate with NPM Registry
+        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: |
           echo "registry=http://registry.npmjs.org/" >> .npmrc
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
