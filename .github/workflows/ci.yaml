@@ -50,43 +50,41 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-#      - name: Linting commit messages
-#        if: ${{ github.event_name == 'pull_request' }}
-#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+      - name: Linting commit messages
+        if: ${{ github.event_name == 'pull_request' }}
+        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
 
-#      - name: Linting sources
-#        run: yarn lint
+      - name: Linting sources
+        run: yarn lint
 
       - name: Build
         run: yarn build
 
-#      - name: Typecheck
-#        run: yarn typecheck
-#
-#      - name: Code coverage
-#        run: yarn coverage
-#
-#      - name: Tests
-#        run: yarn test
+      - name: Typecheck
+        run: yarn typecheck
 
-#      - name: Build documentation
-#        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
-#        run: yarn demo:build
-#
-#      - name: Deploy documentation
-#        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
-#        uses: peaceiris/actions-gh-pages@v3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./docs
+      - name: Code coverage
+        run: yarn coverage
+
+      - name: Tests
+        run: yarn test
+
+      - name: Build documentation
+        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        run: yarn demo:build
+
+      - name: Deploy documentation
+        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
 
       - name: Configure CI Git User
         run: |
-          git config --global user.name 'Megafon CI git user'
+          git config --global user.name 'Megafon CI'
           git config --global user.email 'megafon-ci@users.noreply.github.com'
           git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-#        env:
-#          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
       - name: Authenticate with NPM Registry
         run: |
