@@ -74,6 +74,7 @@ jobs:
         run: |
           echo $GITHUB_REF
           echo ${{ env.BASE_BRANCH }}
+          echo $BASE_BRANCH
           yarn demo:build
 
 
