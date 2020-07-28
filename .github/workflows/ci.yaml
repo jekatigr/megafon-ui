@@ -72,7 +72,7 @@ jobs:
       - name: Define branch purpose
         id: branch
         run: |
-          if [ github.ref = refs/heads/${{ env.BASE_BRANCH }} ];
+          if [ ${{ github.ref }} = refs/heads/${{ env.BASE_BRANCH }} ];
           then
             echo ::set-output name=is_base::true
           else
