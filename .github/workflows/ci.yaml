@@ -74,9 +74,9 @@ jobs:
         run: |
           if [ github.ref == 'refs/heads/${{ env.BASE_BRANCH }}' ];
           then
-            echo ::set-output name=is_base::${true}
+            echo ::set-output name=is_base::true
           else
-            echo ::set-output name=is_base::${false}
+            echo ::set-output name=is_base::false
           fi
 
 
