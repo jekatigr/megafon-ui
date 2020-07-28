@@ -47,8 +47,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nodemodules-
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+#      - name: Install dependencies
+#        run: yarn install --frozen-lockfile
 
 #      - name: Linting commit messages
 #        if: ${{ github.event_name == 'pull_request' }}
@@ -70,9 +70,9 @@ jobs:
 #        run: yarn test
 
       - name: Build documentation
-        if: ${{ env.GITHUB_REF }} == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: ${{ GITHUB_REF }} == 'refs/heads/${{ env.BASE_BRANCH }}'
         run: |
-          echo ${{ env.GITHUB_REF }}
+          echo ${{ GITHUB_REF }}
           echo ${{ env.BASE_BRANCH }}
           yarn demo:build
 
