@@ -70,11 +70,12 @@ jobs:
 #        run: yarn test
 
       - name: Build documentation
-        if: $GITHUB_REF == 'refs/heads/$BASE_BRANCH'
+        if: github.ref == 'refs/heads/$BASE_BRANCH'
         run: |
           echo $GITHUB_REF
           echo ${{ env.BASE_BRANCH }}
           echo $BASE_BRANCH
+          echo github.ref
           yarn demo:build
 
 
