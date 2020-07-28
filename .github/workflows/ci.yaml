@@ -87,7 +87,7 @@ jobs:
           echo 'refs/heads/${{ env.BASE_BRANCH }}'
 
       - name: Build documentation
-        if: github.ref == 'refs/heads/${{ env.BASE_BRANCH }}'
+        if: steps.branch.outputs.is_base == 'true'
         run: yarn demo:build
 
       - name: Deploy documentation
