@@ -6,7 +6,7 @@ import Spinner from 'docIcons/spinner.svg';
 import detectTouch from 'utils/detectTouch';
 
 export interface IButtonProps {
-    /** Special view 1 */
+    /** Special view 2 */
     customView?: 'two-lines';
     /** Link */
     href?: string;
