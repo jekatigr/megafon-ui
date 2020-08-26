@@ -15,7 +15,10 @@
         "*.txt",
         "*.test.*",
         "*.docz.*"
-      ]
+      ],
+      "distTag": "beta",
+      "preId": "beta",
+      "conventionalPrerelease": "*"
     }
   }
 }

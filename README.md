@@ -20,10 +20,10 @@ MegaFon component library is available as several npm packages:
 
 To install, use the command:
 ```bash
-npm install @jekatigr/ui-core
+npm install @jekatigr/ui-core@beta
 ```
 ```bash
-npm install @jekatigr/ui-shared
+npm install @jekatigr/ui-shared@beta
 ```
 
 For local development you need:
