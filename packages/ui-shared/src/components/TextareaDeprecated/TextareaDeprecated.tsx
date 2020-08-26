@@ -5,7 +5,7 @@ import equal from 'deep-equal';
 import { InputLabel, cnCreate, detectTouch } from '@jekatigr/ui-core';
 
 interface ITextareaProps {
-    /** Field title test 29 */
+    /** Field title test 30 */
     label?: React.ReactNode;
     /** Field color scheme */
     color?: 'default' | 'white';
