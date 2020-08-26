@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0-beta.0](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@3.1.0-alpha.0...@jekatigr/ui-shared@3.1.0-beta.0) (2020-08-26)
+
+
+### Bug Fixes
+
+* tets 28 ([c6845f0](https://github.com/MegafonWebLab/megafon-ui/commit/c6845f02309d4996e4dc3e097625eb30d8e8b856))
+
+
+
+
+
 # [3.1.0-alpha.0](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@3.0.0...@jekatigr/ui-shared@3.1.0-alpha.0) (2020-08-26)
 
 
