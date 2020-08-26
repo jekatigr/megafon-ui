@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.0](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.5.0-beta.0...@jekatigr/ui-core@2.0.0-beta.0) (2020-08-26)
+
+
+### Bug Fixes
+
+* test 31 ([37a197f](https://github.com/MegafonWebLab/megafon-ui/commit/37a197fad894c7427f09070979bf764860e80400))
+
+
+### BREAKING CHANGES
+
+* test
+
+
+
+
+
 # [1.5.0-beta.0](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.10...@jekatigr/ui-core@1.5.0-beta.0) (2020-08-26)
 
 
