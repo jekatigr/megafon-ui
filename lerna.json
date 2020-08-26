@@ -17,7 +17,7 @@
         "*.docz.*"
       ],
       "distTag": "beta",
-      "preId": "beta",
+      "preid": "beta",
       "conventionalPrerelease": "*"
     }
   }

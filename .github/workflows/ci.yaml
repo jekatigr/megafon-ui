@@ -60,35 +60,35 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Linting commit messages
-        if: ${{ github.event_name == 'pull_request' }}
-        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
-
-      - name: Linting sources
-        run: yarn lint
+#      - name: Linting commit messages
+#        if: ${{ github.event_name == 'pull_request' }}
+#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+#
+#      - name: Linting sources
+#        run: yarn lint
 
       - name: Build
         run: yarn build
 
-      - name: Typecheck
-        run: yarn typecheck
-
-      - name: Code coverage
-        run: yarn coverage
-
-      - name: Tests
-        run: yarn test
-
-      - name: Build documentation
-        if: steps.branch.outputs.is_base == 'true'
-        run: yarn demo:build
-
-      - name: Deploy documentation
-        if: steps.branch.outputs.is_base == 'true'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+#      - name: Typecheck
+#        run: yarn typecheck
+#
+#      - name: Code coverage
+#        run: yarn coverage
+#
+#      - name: Tests
+#        run: yarn test
+#
+#      - name: Build documentation
+#        if: steps.branch.outputs.is_base == 'true'
+#        run: yarn demo:build
+#
+#      - name: Deploy documentation
+#        if: steps.branch.outputs.is_base == 'true'
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: ./docs
 
       - name: Configure CI Git User
         if: steps.branch.outputs.is_base == 'true'
