@@ -6,7 +6,7 @@ import CheckedIcon from 'icons/System/16/Checked_16.svg';
 import detectTouch from 'utils/detectTouch';
 
 export interface ICheckboxProps {
-    /** Color scheme */
+    /** Color scheme1 */
     color?: 'dark' | 'light';
     /** Custom classname */
     className?: string;
