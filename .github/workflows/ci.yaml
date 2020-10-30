@@ -48,13 +48,13 @@ jobs:
       - name: Define branch purpose
         id: branch
         run: |
-          if [[ ${{ github.ref }} = refs/heads/${{ env.BASE_BRANCH }} ]];
+          if [ ${{ github.ref }} = refs/heads/${{ env.BASE_BRANCH }} ];
           then
             echo ::set-output name=is_base::true
           else
             echo ::set-output name=is_base::false
           fi
-          if [ contains(github.event.head_commit.message, 'skip release') ];
+          if [[ contains(github.event.head_commit.message, 'skip release') ]];
           then
             echo ::set-output name=should_release::false
           else
