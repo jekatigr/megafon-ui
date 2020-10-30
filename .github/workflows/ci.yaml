@@ -60,6 +60,7 @@ jobs:
           else
             echo ::set-output name=should_release::true
           fi
+          echo ${{ contains(github.event.head_commit.message, 'skip release') }}
 
       #      - name: Install dependencies
       #        run: yarn install --frozen-lockfile
