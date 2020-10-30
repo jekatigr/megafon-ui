@@ -113,14 +113,18 @@ jobs:
       #        env:
       #          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Will publish
-        if: !(steps.branch.outputs.is_base == 'true' && steps.branch.outputs.should_release == 'true')
-        run: yarn -v
+      - name: Wont publish
+        if: steps.branch.outputs.is_base == 'false' || steps.branch.outputs.should_release == 'false'
+        run: |
+          echo ${{ steps.branch.outputs.is_base }}
+          echo ${{ steps.branch.outputs.should_release }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Wont publish
+      - name: Will publish
         if: steps.branch.outputs.is_base == 'true' && steps.branch.outputs.should_release == 'true'
-        run: yarn -v
+        run: |
+          echo ${{ steps.branch.outputs.is_base }}
+          echo ${{ steps.branch.outputs.should_release }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
