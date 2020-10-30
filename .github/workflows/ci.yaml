@@ -7,7 +7,7 @@ on:
 jobs:
   main:
     env:
-      BASE_BRANCH: master
+      BASE_BRANCH: skip-release-test
 
     runs-on: ubuntu-latest
 
