@@ -1,14 +1,14 @@
-# @megafon/ui-shared
+# @jekatigr/ui-shared
 
 React UI components library.
 
 ## Getting started
 
 ```bash
-$ npm install --save @megafon/ui-shared@beta
+$ npm install --save @jekatigr/ui-shared@beta
 ```
 ```bash
-$ yarn add @megafon/ui-shared@beta
+$ yarn add @jekatigr/ui-shared@beta
 ```
 
 ## Development notes

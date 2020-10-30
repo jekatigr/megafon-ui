@@ -6,7 +6,7 @@ import {
     Paragraph,
     Grid,
     GridColumn
-} from '@megafon/ui-core';
+} from '@jekatigr/ui-core';
 import './TitleDescriptionBox.less';
 
 export interface ITitleDescriptionBoxProps {

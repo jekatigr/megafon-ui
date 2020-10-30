@@ -12,17 +12,17 @@ Interactive documentation is [here](https://megafonweblab.github.io/megafon-ui/)
 
 MegaFon component library is available as several npm packages:
 - ui-core
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@megafon/ui-core/beta?label=%40megafon%2Fui-core)](https://www.npmjs.com/package/@megafon/ui-core/v/beta)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@jekatigr/ui-core/beta?label=%40megafon%2Fui-core)](https://www.npmjs.com/package/@jekatigr/ui-core/v/beta)
 
 - ui-shared
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@megafon/ui-shared/beta?label=%40megafon%2Fui-shared)](https://www.npmjs.com/package/@megafon/ui-shared/v/beta)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/@jekatigr/ui-shared/beta?label=%40megafon%2Fui-shared)](https://www.npmjs.com/package/@jekatigr/ui-shared/v/beta)
 
 To install, use the command:
 ```bash
-npm install @megafon/ui-core@beta
+npm install @jekatigr/ui-core@beta
 ```
 ```bash
-npm install @megafon/ui-shared@beta
+npm install @jekatigr/ui-shared@beta
 ```
 
 For local development you need:

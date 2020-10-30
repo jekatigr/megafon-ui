@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavGroup.less';
 import { MenuItem, useCurrentDoc } from 'docz';
-import { cnCreate } from '@megafon/ui-core';
+import { cnCreate } from '@jekatigr/ui-core';
 import NavLink from '../NavLink';
 
 type NavGroupProps = {

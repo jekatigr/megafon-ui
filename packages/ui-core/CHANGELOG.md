@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.27](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.26...@megafon/ui-core@2.0.0-beta.27) (2020-10-29)
+# [2.0.0-beta.27](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.26...@jekatigr/ui-core@2.0.0-beta.27) (2020-10-29)
 
 
 ### Bug Fixes
@@ -14,7 +14,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.26](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.25...@megafon/ui-core@2.0.0-beta.26) (2020-10-29)
+# [2.0.0-beta.26](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.25...@jekatigr/ui-core@2.0.0-beta.26) (2020-10-29)
 
 
 ### Bug Fixes
@@ -25,15 +25,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.25](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.24...@megafon/ui-core@2.0.0-beta.25) (2020-10-26)
+# [2.0.0-beta.25](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.24...@jekatigr/ui-core@2.0.0-beta.25) (2020-10-26)
 
-**Note:** Version bump only for package @megafon/ui-core
-
-
+**Note:** Version bump only for package @jekatigr/ui-core
 
 
 
-# [2.0.0-beta.24](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.23...@megafon/ui-core@2.0.0-beta.24) (2020-10-12)
+
+
+# [2.0.0-beta.24](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.23...@jekatigr/ui-core@2.0.0-beta.24) (2020-10-12)
 
 
 ### Features
@@ -44,7 +44,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.23](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.22...@megafon/ui-core@2.0.0-beta.23) (2020-10-02)
+# [2.0.0-beta.23](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.22...@jekatigr/ui-core@2.0.0-beta.23) (2020-10-02)
 
 
 ### Bug Fixes
@@ -55,7 +55,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.22](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.21...@megafon/ui-core@2.0.0-beta.22) (2020-10-01)
+# [2.0.0-beta.22](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.21...@jekatigr/ui-core@2.0.0-beta.22) (2020-10-01)
 
 
 ### Bug Fixes
@@ -66,7 +66,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.21](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.20...@megafon/ui-core@2.0.0-beta.21) (2020-09-29)
+# [2.0.0-beta.21](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.20...@jekatigr/ui-core@2.0.0-beta.21) (2020-09-29)
 
 
 ### Features
@@ -77,7 +77,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.20](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.19...@megafon/ui-core@2.0.0-beta.20) (2020-09-25)
+# [2.0.0-beta.20](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.19...@jekatigr/ui-core@2.0.0-beta.20) (2020-09-25)
 
 
 ### Bug Fixes
@@ -88,7 +88,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.19](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.18...@megafon/ui-core@2.0.0-beta.19) (2020-09-25)
+# [2.0.0-beta.19](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.18...@jekatigr/ui-core@2.0.0-beta.19) (2020-09-25)
 
 
 ### Features
@@ -99,15 +99,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.18](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.17...@megafon/ui-core@2.0.0-beta.18) (2020-09-24)
+# [2.0.0-beta.18](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.17...@jekatigr/ui-core@2.0.0-beta.18) (2020-09-24)
 
-**Note:** Version bump only for package @megafon/ui-core
-
-
+**Note:** Version bump only for package @jekatigr/ui-core
 
 
 
-# [2.0.0-beta.17](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.16...@megafon/ui-core@2.0.0-beta.17) (2020-09-23)
+
+
+# [2.0.0-beta.17](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.16...@jekatigr/ui-core@2.0.0-beta.17) (2020-09-23)
 
 
 ### Bug Fixes
@@ -118,15 +118,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.16](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.15...@megafon/ui-core@2.0.0-beta.16) (2020-09-23)
+# [2.0.0-beta.16](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.15...@jekatigr/ui-core@2.0.0-beta.16) (2020-09-23)
 
-**Note:** Version bump only for package @megafon/ui-core
-
-
+**Note:** Version bump only for package @jekatigr/ui-core
 
 
 
-# [2.0.0-beta.15](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.14...@megafon/ui-core@2.0.0-beta.15) (2020-09-23)
+
+
+# [2.0.0-beta.15](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.14...@jekatigr/ui-core@2.0.0-beta.15) (2020-09-23)
 
 
 ### Bug Fixes
@@ -139,7 +139,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.14](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.13...@megafon/ui-core@2.0.0-beta.14) (2020-09-23)
+# [2.0.0-beta.14](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.13...@jekatigr/ui-core@2.0.0-beta.14) (2020-09-23)
 
 
 ### Features
@@ -150,7 +150,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.13](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.12...@megafon/ui-core@2.0.0-beta.13) (2020-09-21)
+# [2.0.0-beta.13](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.12...@jekatigr/ui-core@2.0.0-beta.13) (2020-09-21)
 
 
 ### Features
@@ -161,7 +161,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.12](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.11...@megafon/ui-core@2.0.0-beta.12) (2020-09-17)
+# [2.0.0-beta.12](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.11...@jekatigr/ui-core@2.0.0-beta.12) (2020-09-17)
 
 
 ### Bug Fixes
@@ -172,7 +172,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.11](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.10...@megafon/ui-core@2.0.0-beta.11) (2020-09-17)
+# [2.0.0-beta.11](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.10...@jekatigr/ui-core@2.0.0-beta.11) (2020-09-17)
 
 
 ### Bug Fixes
@@ -188,7 +188,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.10](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.9...@megafon/ui-core@2.0.0-beta.10) (2020-09-16)
+# [2.0.0-beta.10](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.9...@jekatigr/ui-core@2.0.0-beta.10) (2020-09-16)
 
 
 ### Bug Fixes
@@ -199,7 +199,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.9](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.8...@megafon/ui-core@2.0.0-beta.9) (2020-09-16)
+# [2.0.0-beta.9](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.8...@jekatigr/ui-core@2.0.0-beta.9) (2020-09-16)
 
 
 ### Features
@@ -210,7 +210,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.8](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.7...@megafon/ui-core@2.0.0-beta.8) (2020-09-14)
+# [2.0.0-beta.8](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.7...@jekatigr/ui-core@2.0.0-beta.8) (2020-09-14)
 
 
 ### Bug Fixes
@@ -226,7 +226,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.7](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.6...@megafon/ui-core@2.0.0-beta.7) (2020-09-11)
+# [2.0.0-beta.7](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.6...@jekatigr/ui-core@2.0.0-beta.7) (2020-09-11)
 
 
 ### Bug Fixes
@@ -237,7 +237,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.6](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.5...@megafon/ui-core@2.0.0-beta.6) (2020-09-10)
+# [2.0.0-beta.6](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.5...@jekatigr/ui-core@2.0.0-beta.6) (2020-09-10)
 
 
 ### Bug Fixes
@@ -248,7 +248,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.5](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.4...@megafon/ui-core@2.0.0-beta.5) (2020-09-09)
+# [2.0.0-beta.5](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.4...@jekatigr/ui-core@2.0.0-beta.5) (2020-09-09)
 
 
 ### Bug Fixes
@@ -259,7 +259,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.4](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.3...@megafon/ui-core@2.0.0-beta.4) (2020-09-07)
+# [2.0.0-beta.4](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.3...@jekatigr/ui-core@2.0.0-beta.4) (2020-09-07)
 
 
 ### Bug Fixes
@@ -270,7 +270,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.3](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.2...@megafon/ui-core@2.0.0-beta.3) (2020-09-01)
+# [2.0.0-beta.3](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.2...@jekatigr/ui-core@2.0.0-beta.3) (2020-09-01)
 
 
 ### Bug Fixes
@@ -281,7 +281,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.2](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.1...@megafon/ui-core@2.0.0-beta.2) (2020-08-31)
+# [2.0.0-beta.2](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.1...@jekatigr/ui-core@2.0.0-beta.2) (2020-08-31)
 
 
 ### Bug Fixes
@@ -292,7 +292,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.1](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@2.0.0-beta.0...@megafon/ui-core@2.0.0-beta.1) (2020-08-27)
+# [2.0.0-beta.1](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.0...@jekatigr/ui-core@2.0.0-beta.1) (2020-08-27)
 
 
 ### Bug Fixes
@@ -303,7 +303,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.0.0-beta.0](https://github.com/MegafonWebLab/megafon-ui/compare/@megafon/ui-core@1.4.0...@megafon/ui-core@2.0.0-beta.0) (2020-08-26)
+# [2.0.0-beta.0](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@1.4.0...@jekatigr/ui-core@2.0.0-beta.0) (2020-08-26)
 
 ### BREAKING CHANGES
 

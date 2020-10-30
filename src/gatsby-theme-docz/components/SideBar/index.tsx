@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, cnCreate } from '@megafon/ui-core';
+import { Logo, cnCreate } from '@jekatigr/ui-core';
 import './SideBar.less';
 import Menu from '../Menu';
 

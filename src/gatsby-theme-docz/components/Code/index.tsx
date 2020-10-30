@@ -2,7 +2,7 @@ import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { Styled } from 'theme-ui';
 import { theme } from '../Playground/theme';
-import { cnCreate } from '@megafon/ui-core';
+import { cnCreate } from '@jekatigr/ui-core';
 import './Code.less';
 
 

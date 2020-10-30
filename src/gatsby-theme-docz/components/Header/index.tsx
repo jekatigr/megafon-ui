@@ -1,5 +1,5 @@
 import React from 'react';
-import { cnCreate, Header } from '@megafon/ui-core';
+import { cnCreate, Header } from '@jekatigr/ui-core';
 import './Header.less';
 
 const cn = cnCreate('docz-header');
