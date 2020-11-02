@@ -6,7 +6,7 @@ on:
 
 jobs:
   main:
-    if: ${{ github.repository_owner = 'jekatigr' }}
+    if: github.repository_owner == 'jekatigr'
 
     runs-on: ubuntu-latest
 
