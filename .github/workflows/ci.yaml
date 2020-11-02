@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - master
+      - ci-test2
 
 jobs:
   main:
