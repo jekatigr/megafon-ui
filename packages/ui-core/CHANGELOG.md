@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0-beta.0 (2020-11-02)
+
+
+### Bug Fixes
+
+* ci test 2 ([1185325](https://github.com/MegafonWebLab/megafon-ui/commit/118532549667eeace3dbb250b5a49f43ab8c33f5))
+* ci test 6 ([a522548](https://github.com/MegafonWebLab/megafon-ui/commit/a522548dea8238fbc23646b06aeeda480ca3aafe))
+* ci test 7 ([caedab2](https://github.com/MegafonWebLab/megafon-ui/commit/caedab28bae7a2a2b9416aeda4cdc465e7f11f79))
+* test ci 1 ([a193a9e](https://github.com/MegafonWebLab/megafon-ui/commit/a193a9eff55f0df23505dffd4e878294b5179cab))
+* **base styles:** edit media queries ([e7a22db](https://github.com/MegafonWebLab/megafon-ui/commit/e7a22dbf98835c163fb77bd1974c8f92d1acf0bd))
+* **bubblehint:** delete component ([2872b9b](https://github.com/MegafonWebLab/megafon-ui/commit/2872b9b39cd32811c6378c09c23d43abd5ca3dbc))
+* **build:** add usage param for polyfills ([a26b725](https://github.com/MegafonWebLab/megafon-ui/commit/a26b7253b2f38b6984df7dabf61aee86f9a43ce0))
+* **build:** remove icon property from svgr config ([812bc9f](https://github.com/MegafonWebLab/megafon-ui/commit/812bc9fbbea617edbd56e28b6618654876229924))
+* **dropdownsociallist:** changed snapshots when moved to new Tooltip in DropdownSocialList component ([d53d66c](https://github.com/MegafonWebLab/megafon-ui/commit/d53d66cf341a723eaf3238fa0de218333d78a2be))
+* **dropdownsociallist:** replaced BubbleHint with Tooltip ([96a0a38](https://github.com/MegafonWebLab/megafon-ui/commit/96a0a38001f91b0a6ae42e3f3964065beaddd11f))
+* **grid:** added custom classname prop ([66e9536](https://github.com/MegafonWebLab/megafon-ui/commit/66e953696e74b7648f83b11a72c51ea93d9ff8f4))
+* **icons:** add new checked_16 icon with normal path ([314fbf1](https://github.com/MegafonWebLab/megafon-ui/commit/314fbf17b14db8070d7795cb91ad7ac4744f17bd))
+* **icons:** new Cancel svg files with merged path, for all icon sizes ([9d4cf8d](https://github.com/MegafonWebLab/megafon-ui/commit/9d4cf8d85d4c5c24da7b6e7dc159630a4f930034))
+* **icons:** update icons ([19dccd3](https://github.com/MegafonWebLab/megafon-ui/commit/19dccd3d8160667f2f3c4e2e6b0713422ccf6fba))
+* **notification:** changed enum to object literal ([2b3f77c](https://github.com/MegafonWebLab/megafon-ui/commit/2b3f77c3575754626a88b6f431fb45e6c80b27a3))
+* **select:** add data attrs prop ([554a173](https://github.com/MegafonWebLab/megafon-ui/commit/554a17388009f52a335273729343b938d952848a))
+* **select:** changed enum to object literal ([2873aeb](https://github.com/MegafonWebLab/megafon-ui/commit/2873aeb013beca7068c5062afaf7d8c50d495bcf))
+* **select:** edit item value prop type ([78d667d](https://github.com/MegafonWebLab/megafon-ui/commit/78d667df26d32e0159abb4a7d4d16bb2be0bdbc3))
+* **select:** fix keys generation ([7ff4fa8](https://github.com/MegafonWebLab/megafon-ui/commit/7ff4fa82ad5300f10c99fa1c77799efacfca261f))
+* **select:** increased z-index ([13c1ae5](https://github.com/MegafonWebLab/megafon-ui/commit/13c1ae518ee102119fba2c55c728b038cf163526))
+* **styles:** changed classname prefix for beta ([278ac85](https://github.com/MegafonWebLab/megafon-ui/commit/278ac8560711c829885a7d515dc69f58b640a82a))
+* **text filed:** separate input params for react input mask ([de6f00e](https://github.com/MegafonWebLab/megafon-ui/commit/de6f00ef3af5fff01b8e2f8fc983b89d7d8a956a))
+* **textfield:** fix placeholder in ie ([603bf8f](https://github.com/MegafonWebLab/megafon-ui/commit/603bf8f14e5cee27c6fcca6ac28bb696d5ee54c4))
+* **textfield:** fix Verification type ([2911a94](https://github.com/MegafonWebLab/megafon-ui/commit/2911a9447126a3d24206a995e456884badfac7d6))
+* **textfield:** increase zIndex icon with onClick handler ([f169dd5](https://github.com/MegafonWebLab/megafon-ui/commit/f169dd5c1200193868ddfbd637e8ff3aeb90e904))
+* **textfield:** new prop classes ([d66340f](https://github.com/MegafonWebLab/megafon-ui/commit/d66340fbb4f1242b61e988c566efccc75ac066ca))
+* **tile:** changed enum to object literal ([3d55209](https://github.com/MegafonWebLab/megafon-ui/commit/3d55209bedffe8240607f7ff47edcf1f8c34158b))
+* **tile:** edit text decoration on hover ([bb5c694](https://github.com/MegafonWebLab/megafon-ui/commit/bb5c694413564f8ec05f1b1c0d5f625efd410e8d))
+* **tile:** fixed notes ([79ed5ec](https://github.com/MegafonWebLab/megafon-ui/commit/79ed5ec7179888bff5c4cff9e871162e943184da))
+* add data attributes prop ([8f38c20](https://github.com/MegafonWebLab/megafon-ui/commit/8f38c2045f9bf7c4829946edf2071be6fe6a07df))
+* export interfaces ([275c2e1](https://github.com/MegafonWebLab/megafon-ui/commit/275c2e1f94ea69f7a29e4b3590504dd2def32ac1))
+
+
+### Features
+
+* **checkbox:** add data attrs prop ([5d66a67](https://github.com/MegafonWebLab/megafon-ui/commit/5d66a67bb33ce487dfb2e9ffe4663c921734997a))
+* **iconbutton:** mFRU-7874 ([35f1330](https://github.com/MegafonWebLab/megafon-ui/commit/35f133068e1337856409bd5cd40d8abd7f346c90))
+* **link:** add rel prop ([b3e08f9](https://github.com/MegafonWebLab/megafon-ui/commit/b3e08f96f90b7f008020f8701fb07d851b07ca69))
+* **search:** add className prop ([0502a00](https://github.com/MegafonWebLab/megafon-ui/commit/0502a0098f005f70fb678b9b3c59f726e05ad297))
+* **search:** added Search component ([69ed181](https://github.com/MegafonWebLab/megafon-ui/commit/69ed181093ac94e476b28cf4f02055fc00076862))
+* **textfield:** added inputmode for input ([5762d99](https://github.com/MegafonWebLab/megafon-ui/commit/5762d9996261e23bb9342d435a0562993f648e03))
+* **textlink:** add rel prop ([cb2dd84](https://github.com/MegafonWebLab/megafon-ui/commit/cb2dd841740285631cae9238d5a2c0e28107dc7e))
+* **tile:** added new component ([4efc047](https://github.com/MegafonWebLab/megafon-ui/commit/4efc0479bc748013e1ce50a78d07cc08cd2e2007))
+* **tooltip:** new Tooltip component with ref trigger element ([46efee7](https://github.com/MegafonWebLab/megafon-ui/commit/46efee792a1ae1c7fa056ea20846250ec556be4c))
+* beta publish preparation for ui-core ([58593f9](https://github.com/MegafonWebLab/megafon-ui/commit/58593f913b0c6fcc241a7bfd2829c081e61e411e))
+
+
+### BREAKING CHANGES
+
+* **bubblehint:** BubbleHint component has been removed. Use new Tooltip component instead
+* see changelog
+
+
+
+
+
 # [2.0.0-beta.33](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@2.0.0-beta.32...@jekatigr/ui-core@2.0.0-beta.33) (2020-11-02)
 
 

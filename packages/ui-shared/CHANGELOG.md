@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.0.0-beta.0 (2020-11-02)
+
+
+### Bug Fixes
+
+* ci test 7 ([caedab2](https://github.com/MegafonWebLab/megafon-ui/commit/caedab28bae7a2a2b9416aeda4cdc465e7f11f79))
+* **build:** add usage param for polyfills ([a26b725](https://github.com/MegafonWebLab/megafon-ui/commit/a26b7253b2f38b6984df7dabf61aee86f9a43ce0))
+* **build:** remove icon property from svgr config ([812bc9f](https://github.com/MegafonWebLab/megafon-ui/commit/812bc9fbbea617edbd56e28b6618654876229924))
+* **dropdownsociallist:** changed snapshots when moved to new Tooltip in DropdownSocialList component ([d53d66c](https://github.com/MegafonWebLab/megafon-ui/commit/d53d66cf341a723eaf3238fa0de218333d78a2be))
+* **productcard:** replace BubbleHint with Tooltip in ProductCardInfo component ([5a2491d](https://github.com/MegafonWebLab/megafon-ui/commit/5a2491d698c9feee7af1c199907d38ac60e31d71))
+* **producttile:** component height changes when hint-text node change its border visibility ([5bb16de](https://github.com/MegafonWebLab/megafon-ui/commit/5bb16de3cfc738454bd220acea06bbcc4a6546d5))
+* **producttile:** switched from BubbleHint to new Tooltip in ProductTileOptions component ([674c158](https://github.com/MegafonWebLab/megafon-ui/commit/674c15816ed5fe2ec462974db739a6a75ac6cacd))
+* add data attributes prop ([8f38c20](https://github.com/MegafonWebLab/megafon-ui/commit/8f38c2045f9bf7c4829946edf2071be6fe6a07df))
+* export interfaces ([275c2e1](https://github.com/MegafonWebLab/megafon-ui/commit/275c2e1f94ea69f7a29e4b3590504dd2def32ac1))
+* **styles:** changed classname prefix for beta ([278ac85](https://github.com/MegafonWebLab/megafon-ui/commit/278ac8560711c829885a7d515dc69f58b640a82a))
+
+
+### Features
+
+* **benefits with a picture:** added new component ([eef03e8](https://github.com/MegafonWebLab/megafon-ui/commit/eef03e8fce4431844aa7d47be965d5b3204fad28))
+* **tooltip:** new Tooltip component with ref trigger element ([46efee7](https://github.com/MegafonWebLab/megafon-ui/commit/46efee792a1ae1c7fa056ea20846250ec556be4c))
+* **video block:** add a new component ([58e857e](https://github.com/MegafonWebLab/megafon-ui/commit/58e857e6584d65c3c85c48f4493a91d868dc5fcb))
+* beta publish preparation for ui-shared ([96e7dfc](https://github.com/MegafonWebLab/megafon-ui/commit/96e7dfcc843a2cae9fa6d2a80755e0a2a68c466c))
+
+
+### BREAKING CHANGES
+
+* see changelog
+
+
+
+
+
 # [2.0.0-beta.34](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@2.0.0-beta.33...@jekatigr/ui-shared@2.0.0-beta.34) (2020-11-02)
 
 
