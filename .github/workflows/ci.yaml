@@ -51,21 +51,21 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Linting commit messages
-        if: ${{ github.event_name == 'pull_request' }}
-        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
-
-      - name: Linting sources
-        run: yarn lint
+#      - name: Linting commit messages
+#        if: ${{ github.event_name == 'pull_request' }}
+#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+#
+#      - name: Linting sources
+#        run: yarn lint
 
       - name: Build
         run: yarn build
 
-      - name: Typecheck
-        run: yarn typecheck
-
-      - name: Tests
-        run: yarn test
+#      - name: Typecheck
+#        run: yarn typecheck
+#
+#      - name: Tests
+#        run: yarn test
 
       - name: Define branch purpose
         id: branch
