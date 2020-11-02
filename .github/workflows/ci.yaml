@@ -100,4 +100,4 @@ jobs:
         if: steps.branch.outputs.should_release == 'true'
         run: yarn exec lerna publish -- --yes
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
