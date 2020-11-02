@@ -9,63 +9,63 @@ on:
 jobs:
   main:
     env:
-      BASE_BRANCH: master
+      BASE_BRANCH: ci-test2
       BASE_REPO: MegafonWebLab
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Yarn cache
-        uses: actions/cache@v2
-        id: cache-yarn-ci
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Local Node.js modules cache
-        id: cache-node-modules-ci
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-            */*/node_modules
-          key: ${{ runner.os }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-nodemodules-
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Linting commit messages
-        if: ${{ github.event_name == 'pull_request' }}
-        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
-
-      - name: Linting sources
-        run: yarn lint
-
-      - name: Build
-        run: yarn build
-
-      - name: Typecheck
-        run: yarn typecheck
-
-      - name: Tests
-        run: yarn test
+#      - uses: actions/checkout@v2
+#        with:
+#          fetch-depth: 0
+#
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: '12.x'
+#
+#      - name: Get yarn cache directory path
+#        id: yarn-cache-dir-path
+#        run: echo "::set-output name=dir::$(yarn cache dir)"
+#
+#      - name: Yarn cache
+#        uses: actions/cache@v2
+#        id: cache-yarn-ci
+#        with:
+#          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.os }}-yarn-
+#
+#      - name: Local Node.js modules cache
+#        id: cache-node-modules-ci
+#        uses: actions/cache@v2
+#        with:
+#          path: |
+#            node_modules
+#            */*/node_modules
+#          key: ${{ runner.os }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.os }}-nodemodules-
+#
+#      - name: Install dependencies
+#        run: yarn install --frozen-lockfile
+#
+#      - name: Linting commit messages
+#        if: ${{ github.event_name == 'pull_request' }}
+#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+#
+#      - name: Linting sources
+#        run: yarn lint
+#
+#      - name: Build
+#        run: yarn build
+#
+#      - name: Typecheck
+#        run: yarn typecheck
+#
+#      - name: Tests
+#        run: yarn test
 
       - name: Define branch purpose
         id: branch
