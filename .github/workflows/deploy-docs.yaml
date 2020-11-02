@@ -1,4 +1,4 @@
-name: megafon-ui CI
+name: megafon-ui CI deploy
 
 on:
   release:
