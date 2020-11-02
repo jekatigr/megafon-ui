@@ -10,7 +10,7 @@ jobs:
   main:
     env:
       BASE_BRANCH: ci-test2
-      BASE_REPO: MegafonWebLab
+      BASE_REPO: jekatigr
 
     runs-on: ubuntu-latest
 
@@ -96,8 +96,8 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish
-        if: steps.branch.outputs.should_release == 'true'
-        run: yarn exec lerna publish -- --yes
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Publish
+#        if: steps.branch.outputs.should_release == 'true'
+#        run: yarn exec lerna publish -- --yes
+#        env:
+#          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
