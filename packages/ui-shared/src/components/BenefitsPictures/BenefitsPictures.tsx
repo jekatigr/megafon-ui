@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 import './BenfitsPictures.less';
-import { cnCreate, Grid, GridColumn, Header, Paragraph } from '@megafon/ui-core';
+import { cnCreate, Grid, GridColumn, Header, Paragraph } from '@jekatigr/ui-core';
 import { IBenefit, GridConfig, GridGutterSize } from './types';
 import { DESKTOP_MIDDLE_START } from '../../constants/breakpoints';
 

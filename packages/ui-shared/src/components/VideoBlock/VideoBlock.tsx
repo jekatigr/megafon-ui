@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import './VideoBlock.less';
-import { Header, Button, Paragraph, Grid, GridColumn, cnCreate } from '@megafon/ui-core';
+import { Header, Button, Paragraph, Grid, GridColumn, cnCreate } from '@jekatigr/ui-core';
 
 export interface IContent {
     /** Заголовок */

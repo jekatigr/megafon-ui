@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import './style/BenefitsIcons.less';
-import { cnCreate, Grid, GridColumn } from '@megafon/ui-core';
+import { cnCreate, Grid, GridColumn } from '@jekatigr/ui-core';
 import BenefitsIconsTile from './BenefitsIconsTile';
 import { GridConfig, IconPositionEnum, IBenefit } from './types';
 

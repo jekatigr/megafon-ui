@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import convert from 'htmr';
 import './style/BenefitsIconsTile.less';
-import { Header, Paragraph, cnCreate } from '@megafon/ui-core';
+import { Header, Paragraph, cnCreate } from '@jekatigr/ui-core';
 import { IBenefit, IconPositionEnum } from './types';
 
 export interface IBenefitsIconsTile extends IBenefit {

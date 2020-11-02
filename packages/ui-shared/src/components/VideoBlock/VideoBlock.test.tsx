@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { cnCreate } from '@megafon/ui-core';
+import { cnCreate } from '@jekatigr/ui-core';
 import VideoBlock, { VideoTypes } from './VideoBlock';
 
 const content = {

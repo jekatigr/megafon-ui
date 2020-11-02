@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { cnCreate, Tooltip } from '@megafon/ui-core';
+import { cnCreate, Tooltip } from '@jekatigr/ui-core';
 import './style/ProductTileOptions.less';
 import { IOption } from './ProductTile';
 
