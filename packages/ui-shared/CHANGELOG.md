@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.4](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@4.0.0-beta.3...@jekatigr/ui-shared@4.0.0-beta.4) (2020-11-02)
+
+**Note:** Version bump only for package @jekatigr/ui-shared
+
+
+
+
+
 # [4.0.0-beta.3](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-shared@4.0.0-beta.2...@jekatigr/ui-shared@4.0.0-beta.3) (2020-11-02)
 
 **Note:** Version bump only for package @jekatigr/ui-shared
