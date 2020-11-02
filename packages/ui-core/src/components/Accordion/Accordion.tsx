@@ -8,7 +8,7 @@ import ArrowUp from 'icons/System/24/Arrow_up_24.svg';
 import ArrowDown from 'icons/System/24/Arrow_down_24.svg';
 
 export interface IAccordionProps {
-    /** Заголовок 2 */
+    /** Заголовок 3 */
     title: string;
     /** Состояние открытости */
     isOpened?: boolean;
