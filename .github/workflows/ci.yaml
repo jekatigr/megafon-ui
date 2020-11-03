@@ -1,4 +1,4 @@
-name: megafon-ui CI
+name: test and release
 
 on:
   pull_request:
@@ -8,8 +8,6 @@ on:
 
 jobs:
   main:
-    if: true == false
-
     env:
       BASE_BRANCH: ci-test2
       BASE_REPO: jekatigr
