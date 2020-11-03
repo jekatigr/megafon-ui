@@ -40,37 +40,18 @@ jobs:
                 const createdBeforeCurrent = new Date(currentRun.created_at) > new Date(workflowRun.created_at);
 
                 if (notThis && notCompleted && createdBeforeCurrent) {
-                  console.log('cancel this run: ', workflowRun);
+                  console.log('cancel run: number - ', workflowRun.run_number, ', id - ', workflowRun.id);
+
+                  await octokit.request('POST /repos/{owner}/{repo}/actions/runs/{run_id}/cancel', {
+                    owner: context.payload.repository.owner.login,
+                    repo: context.payload.repository.name,
+                    run_id: workflowRun.id
+                  })
                 }
               }
             } catch (ex) {
               console.log('Exception while cancelling other workflow runs: ', ex);
             }
-
-#            const creator = context.payload.sender.login
-#            const opts = github.issues.listForRepo.endpoint.merge({
-#              ...context.issue,
-#              creator,
-#              state: 'all'
-#            })
-#            const issues = await github.paginate(opts)
-#
-#            for (const issue of issues) {
-#              if (issue.number === context.issue.number) {
-#                continue
-#              }
-#
-#              if (issue.pull_request) {
-#                return // Creator is already a contributor.
-#              }
-#            }
-#
-#            await github.issues.createComment({
-#              issue_number: context.issue.number,
-#              owner: context.repo.owner,
-#              repo: context.repo.repo,
-#              body: 'Welcome, new contributor!'
-#            })
 
       - uses: actions/checkout@v2
 
