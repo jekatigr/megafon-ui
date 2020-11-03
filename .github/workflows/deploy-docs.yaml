@@ -28,6 +28,9 @@ jobs:
                 event: 'release'
               })
 
+              console.log(result.data.workflow_runs[0], '\n', '\n');
+              console.log(context, '\n', '\n');
+
               const currentRun = result.data.workflow_runs.find((r) => r.id === context.runId);
 
               console.log(currentRun, '\n', '\n');
