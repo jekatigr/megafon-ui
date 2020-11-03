@@ -13,9 +13,8 @@ jobs:
     steps:
       - name: Cancel previous runs
         uses: n1hility/cancel-previous-runs@v2
-          with:
-            token: ${{ secrets.PAT_TOKEN }}
-            workflow: deploy-docs.yml
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - uses: actions/checkout@v2
 
