@@ -19,16 +19,18 @@ jobs:
         with:
           github-token: ${{secrets.PAT_TOKEN}}
           script: |
-            console.log(context.payload.repository);
+            try {
+              // Get a list of deploy docs workflow runs
+              const result = await github.request('GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs', {
+                owner: context.payload.repository.owner.login,
+                repo: context.payload.repository.name,
+                workflow_id: 'deploy-docs.yaml'
+              })
 
-            // Get a list of deploy docs workflow runs
-            const result = await github.request('GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs', {
-              owner: 'jekatigr',
-              repo: 'megafon-ui',
-              workflow_id: 'deploy-docs.yaml'
-            })
-
-            console.log(result);
+              console.log(result.data.workflow_runs);
+            } catch (ex) {
+              console.log('Exception while cancelling other workflow runs: ', ex);
+            }
 
 #            const creator = context.payload.sender.login
 #            const opts = github.issues.listForRepo.endpoint.merge({
