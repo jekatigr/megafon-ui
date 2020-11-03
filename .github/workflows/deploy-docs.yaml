@@ -30,14 +30,18 @@ jobs:
 
               const currentRun = result.data.workflow_runs.find((r) => r.id === context.runId);
 
-              console.log(currentRun, '\n', '\n');
+              if (!currentRun) {
+                return;
+              }
 
               for (const workflowRun of result.data.workflow_runs) {
-                if (workflowRun.status === 'completed' || workflowRun.id === context.runId) {
-                  continue;
-                }
+                const notThis = workflowRun.id !== currentRun.id;
+                const notCompleted = workflowRun.status !== 'completed';
+                const createdBeforeCurrent = new Date(currentRun.created_at) > new Date(workflowRun.created_at);
 
-                console.log('here');
+                if (notThis && notCompleted && createdBeforeCurrent) {
+                  console.log('cancel this run: ', workflowRun);
+                }
               }
             } catch (ex) {
               console.log('Exception while cancelling other workflow runs: ', ex);
