@@ -28,10 +28,12 @@ jobs:
                 event: 'release'
               })
 
-              console.log(context);
+              const currentRun = result.data.workflow_runs.find((r) => r.runId === context.runId);
+
+              console.log(currentRun, '\n', '\n');
 
               for (const workflowRun of result.data.workflow_runs) {
-                if (workflowRun.status === 'completed' || workflowRun.id === constext.runId) {
+                if (workflowRun.status === 'completed' || workflowRun.id === context.runId) {
                   continue;
                 }
 
