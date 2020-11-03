@@ -25,7 +25,7 @@ jobs:
                 owner: context.payload.repository.owner.login,
                 repo: context.payload.repository.name,
                 workflow_id: 'deploy-docs.yaml',
-#                event: 'release'
+                // event: 'release'
               })
 
               const currentRun = result.data.workflow_runs.find((r) => r.id === context.runId);
