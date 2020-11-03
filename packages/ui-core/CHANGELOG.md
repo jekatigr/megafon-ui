@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-beta.9](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@3.0.0-beta.8...@jekatigr/ui-core@3.0.0-beta.9) (2020-11-03)
+
+
+### Bug Fixes
+
+* ci test 36 ([ceb4511](https://github.com/MegafonWebLab/megafon-ui/commit/ceb4511702219b93127bdf82d2c0f16759e522c4))
+
+
+
+
+
 # [3.0.0-beta.8](https://github.com/MegafonWebLab/megafon-ui/compare/@jekatigr/ui-core@3.0.0-beta.7...@jekatigr/ui-core@3.0.0-beta.8) (2020-11-03)
 
 **Note:** Version bump only for package @jekatigr/ui-core
