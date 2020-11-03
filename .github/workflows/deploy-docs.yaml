@@ -31,7 +31,7 @@ jobs:
               const currentRun = result.data.workflow_runs.find((r) => r.id === context.runId);
 
               if (!currentRun) {
-                return; //
+                return;
               }
 
               for (const workflowRun of result.data.workflow_runs) {
