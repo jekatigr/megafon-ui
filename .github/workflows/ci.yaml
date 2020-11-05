@@ -10,7 +10,7 @@ jobs:
   main:
     env:
       BASE_BRANCH: ci-test2
-      BASE_REPO: jekatigr
+      BASE_REPO_OWNER: jekatigr
 
     runs-on: ubuntu-latest
 
@@ -51,28 +51,28 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-#      - name: Linting commit messages
-#        if: ${{ github.event_name == 'pull_request' }}
-#        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
-#
-#      - name: Linting sources
-#        run: yarn lint
+      - name: Linting commit messages
+        if: ${{ github.event_name == 'pull_request' }}
+        run: yarn exec commitlint -- --from=origin/${{ github.base_ref }} --to=HEAD
+
+      - name: Linting sources
+        run: yarn lint
 
       - name: Build
         run: yarn build
 
-#      - name: Typecheck
-#        run: yarn typecheck
-#
-#      - name: Tests
-#        run: yarn test
+      - name: Typecheck
+        run: yarn typecheck
+
+      - name: Tests
+        run: yarn test
 
       - name: Define branch purpose
         id: branch
         run: |
           if
           [ ${{ contains(github.event.head_commit.message, 'skip release') }} = false ] &&
-          [ ${{ github.repository_owner }} = ${{ env.BASE_REPO }} ] &&
+          [ ${{ github.repository_owner }} = ${{ env.BASE_REPO_OWNER }} ] &&
           [ ${{ github.ref }} = refs/heads/${{ env.BASE_BRANCH }} ];
           then
             echo ::set-output name=should_release::true
